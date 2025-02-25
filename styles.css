@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+*,
+*::before,
+*::after {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", cursive;
+}
+
+:root {
+  --fundo-1: #f5f5f5;
+  --texto-1: #333;
+  --btn-play-pause-1: #4caf50;
+  --btn-reset-1: #e53935;
+  --fundo-2: #e3f2fd;
+  --texto-2: #37474f;
+  --btn-play-pause-2: #1e88e5;
+  --btn-reset-2: #d32f2f;
+  --fundo-3: #121212;
+  --texto-3: #e0e0e0;
+  --btn-play-pause-3: #4caf50;
+  --btn-reset-3: #f44336;
+}
+
+body {
+  background-color: var(--fundo-1);
+}
+
+#title-page {
+  font-size: 5rem;
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--texto-1);
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  height: 100vh;
+  margin: 2rem auto;
+}
+
+#timer {
+  font-size: 6rem;
+}
+
+/*----BOTÕES----*/
+#wrapper-btn {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  max-width: 80%;
+}
+
+.btn {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  min-width: 5rem;
+  width: 30rem;
+  margin-bottom: 10rem;
+}
+
+#btn-start {
+  background-color: var(--btn-play-pause-1);
+}
+#btn-reset {
+  display: none;
+  background-color: var(--btn-reset-1);
+}
